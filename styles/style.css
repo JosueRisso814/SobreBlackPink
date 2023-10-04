@@ -162,4 +162,13 @@ div.cartitas {
     .icono_header {
         margin: 0;
     }
+    iframe {
+        width: 90%;
+        height: 300px;
+    }
+}
+@media (max-width: 991px) {
+    .iframe {
+        height: 240px;
+    }
 }
