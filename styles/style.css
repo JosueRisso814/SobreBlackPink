@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+/* ----------------------------------HEADER--------------------------------------- */
+.icono_header{
+    width: 50px;
+    margin-right: 1.1rem;
+}
+nav a{
+    background-color: rgb(114, 56, 138);
+    color: rgb(226, 144, 226);
+    font-size: 1.2rem;
+}
+
+.header {
+    background-color: rgb(113, 57, 136);
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* ------------------------------------FOOTER---------------------------------- */
+footer {
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    color: rgb(226, 144, 226);
+    background-position: top;
+    background-image: url(../img/nice.jpg);
+}
+/* ------------------------------------BODY---------------------------------- */
+.body {
+    background-color: #0f090e
+}
+/* ------------------------------------I N D E X---------------------------------- */
+
+.banner {
+    border-radius: 1.2rem;
+    margin-top: 1rem;
+}
+
+main div h2, main div p{
+    text-align: center;
+}
+
+.ph2 {
+    margin-inline: 30%;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.ph2_2{
+    margin-inline: 25%;
+    padding: 1.875rem;
+}
+
+.ph2, .ph2_2 {
+    background-color: azure;
+    border-radius: 1.875rem;
+    border: 0.188rem solid rgb(184, 143, 184);
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+}
+
+.ph2 p, .ph2_2 p{
+    text-align: justify;
+}
+
+/* ------------------------------------MIEMBROS---------------------------------- */
+
+.h1_miembros{
+    background-color: rgb(61, 32, 73);
+    text-align: center;
+    width: 100%;
+    padding-top: .1rem;
+}
+
+.h1_miembros p{
+    color: rgb(226, 144, 226);
+    font-size: 1.4rem;
+}
+
+div.cartitas {
+    margin-top: 1rem;
+}
+.card-img-top {
+    border-radius: 20px;
+}
+
+/* ------------------------------------DISCOGRAFIA---------------------------------- */
+
+.banner_disco {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.primer_album {
+    font-size: 1.2rem;
+    text-align:left;
+}
+
+.center_p {
+    text-align:left;
+    margin: 1.1rem;
+    color: aliceblue;
+}
+
+.center_img {
+    margin: 1.2rem;
+    width: 40%;
+    border-radius: 0.8rem;
+}
+
+.iframe {
+    margin: 1.2rem;
+}
+
+/* ------------------------------------CONTACTO---------------------------------- */
+
+.formulario {
+    background-color: rgb(61, 32, 73);
+    margin: 1.3rem;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+.formulario2 {
+    background-color: rgb(61, 32, 73);
+}
+
+/* ------------------------------------MIEMBROS / GALLERY---------------------------------- */
+
+.gallery {
+    margin: auto;
+    width: 91%;
+    columns: 5 320px;
+    padding: 2em;
+}
+
+.gallery_img {
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    border-radius: 1rem;
+}
+
+@media (max-width: 991px) {
+    p {
+        font-size: .8rem;
+    }
+    h3 {
+        font-size: .3rem;
+    }
+    .icono_header {
+        margin: 0;
+    }
+}
