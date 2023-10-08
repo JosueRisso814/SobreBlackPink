@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@100;400&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
 
 *{
     margin: 0;
@@ -40,40 +41,93 @@ footer p {
 }
 /* ------------------------------------BODY---------------------------------- */
 .body {
-    background-color: #0f090e
+    background-color: #0a090a;
 }
 /* ------------------------------------I N D E X---------------------------------- */
 
-.banner {
-    border-radius: 1.2rem;
-    margin-top: 1rem;
+.grid_contenedor{
+    margin-block: 1rem;
+    height: 650px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr 1fr 15%;
+    grid-template-rows: 25% 25% 1fr 1fr 1fr 1fr; 
 }
 
-main div h2, main div p{
+.caja{
     text-align: center;
+    border-radius: .5rem;
+    position: relative;
 }
 
-.ph2 {
-    margin-inline: 30%;
-    padding: 1.25rem;
-    text-align: center;
+.c1{
+    background-color: rgb(39, 35, 44);
+    grid-column: 2/5;
+    grid-row: 1/3;
+}
+.grid_h2{
+    text-decoration:overline;
+    position: absolute;
+    color: #ffffffb0;
+    bottom: 0;
+    background: linear-gradient(rgb(255,255,255,0),rgb(0, 0, 0));
+    margin: 0;
+    padding: .1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+}
+.img_div {
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.c2, .c3 {
+    grid-column: 5/7;
+    background-color: rgb(39, 35, 44);
 }
 
-.ph2_2{
-    margin-inline: 25%;
-    padding: 1.875rem;
+.c4, .c5, .c6 ,.c7{
+    grid-column: 2/7;
+}
+.c4{
+    color: #fff;
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+    gap: 1rem;
+}
+.grid_p.p1{
+    font-size: 1.7rem;
+}
+.grid_p,
+.caja.caja.c5.blink h3,
+.caja.caja.c5.blink p {
+    font-family: 'REM', sans-serif;
+    background-color: #333;
+    display: grid;
+    place-content: center;
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    margin: 0;
+    padding: 1rem;
 }
 
-.ph2, .ph2_2 {
-    background-color: azure;
-    border-radius: 1.875rem;
-    border: 0.188rem solid rgb(184, 143, 184);
-    margin-top: 0.625rem;
-    font-size: 1.25rem;
+.caja.c5.blink{
+    color: #fff;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 34% 1fr; 
+    grid-template-rows: 17% .2fr;
+}
+.caja.caja.c5.blink h3,
+.caja.caja.c5.blink p{
+    grid-column: 2/3;
+}
+.caja.caja.c5.blink p{
 }
 
-.ph2 p, .ph2_2 p{
-    text-align: justify;
+.caja.caja.c5.blink iframe{
+    border-radius: .5rem;
 }
 
 /* ------------------------------------MIEMBROS---------------------------------- */
@@ -96,7 +150,6 @@ div.cartitas {
 .card-img-top {
     border-radius: 20px;
 }
-
 /* ------------------------------------DISCOGRAFIA---------------------------------- */
 
 .banner_disco {
@@ -125,6 +178,10 @@ div.cartitas {
     margin: 1.2rem;
 }
 
+.caja.c5{
+
+}
+
 /* ------------------------------------CONTACTO---------------------------------- */
 
 .formulario {
@@ -137,7 +194,7 @@ div.cartitas {
     background-color: rgb(61, 32, 73);
 }
 
-/* ------------------------------------MIEMBROS / GALLERY---------------------------------- */
+/*----------------------------MIEMBROS / GALLERY---------------------------------- */
 
 .gallery {
     margin: auto;
@@ -177,3 +234,5 @@ div.cartitas {
         margin: .2rem;
     }
 }
+
+/* --------*/
