@@ -152,8 +152,6 @@ footer p {
 .caja.caja.c5.blink p{
     grid-column: 2/3;
 }
-.caja.caja.c5.blink p{
-}
 
 .caja.caja.c5.blink iframe{
     border-radius: .5rem;
@@ -209,9 +207,6 @@ div.cartitas {
     margin: 1.2rem;
 }
 
-.caja.c5{
-
-}
 
 /* ------------------------------------CONTACTO---------------------------------- */
 
