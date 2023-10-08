@@ -44,6 +44,7 @@ footer p {
     background-color: #0a090a;
 }
 /* ------------------------------------I N D E X---------------------------------- */
+/* ------------------------------------GRID 1---------------------------------- */
 
 .grid_contenedor{
     margin-block: 1rem;
@@ -90,10 +91,11 @@ footer p {
 .c4, .c5, .c6 ,.c7{
     grid-column: 2/7;
 }
+/* ------------------------------------GRID 2--------------------------------- */
 .c4{
-    color: #fff;
+    color: #ffffffb0;
     display: grid;
-    grid-template-columns: .4fr 1fr;
+    grid-template-columns: .4fr 1fr .2fr;
     gap: 1rem;
 }
 .grid_p.p1{
@@ -103,7 +105,7 @@ footer p {
 .caja.caja.c5.blink h3,
 .caja.caja.c5.blink p {
     font-family: 'REM', sans-serif;
-    background-color: #333;
+    background-color: #33333314;
     display: grid;
     place-content: center;
     font-size: 1.4rem;
@@ -111,9 +113,36 @@ footer p {
     margin: 0;
     padding: 1rem;
 }
+/* ------------------------------------GRID 3---------------------------------- */
+.grid_icons{
+    gap: .4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.icon_index{
+    border-radius: 1rem;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.grid3_caja{
+    position: relative;
+}
+.grid3_h2{
+    position: absolute;
+    color: #ffffffb0;
+    bottom: 0;
+    background: linear-gradient(rgb(255,255,255,0),rgb(0, 0, 0));
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
 
+/* ------------------------------------GRID 4---------------------------------- */
 .caja.c5.blink{
-    color: #fff;
+    color: #ffffffb0;
     gap: 1rem;
     display: grid;
     grid-template-columns: 34% 1fr; 
@@ -129,7 +158,9 @@ footer p {
 .caja.caja.c5.blink iframe{
     border-radius: .5rem;
 }
-
+.blink_img {
+    border-radius: .5rem;
+}
 /* ------------------------------------MIEMBROS---------------------------------- */
 
 .h1_miembros{
@@ -235,4 +266,5 @@ div.cartitas {
     }
 }
 
-/* --------*/
+/* -------
+<iframe width="100%" height="540px" src="https://www.instagram.com/p/CGe8E1xD4hm/embed/" frameborder="0"></iframe>-*/
