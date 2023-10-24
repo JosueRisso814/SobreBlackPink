@@ -7,6 +7,7 @@
     <title>Black Pink</title>
     <link rel="shortcut icon" href="./img/icons8-blackpink-48.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
@@ -14,9 +15,11 @@
 
 <header class="header">
 
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a href="../index.html"><img class="icono_header" src="../img/icono2.png" alt="icono Blackpink"></a>
-    <a class="navbar-brand" href="../index.html">-Sobre BLΛƆK PIИK-</strong></a>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a href="../index.html">
+      <img src="../img/icono2.png" alt="icono Blackpink">
+    </a>
+    <a class="navbar-brand" href="../index.html">-Sobre <span class="pink">BLΛƆK PIИK</span>-</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,58 +36,119 @@
 
 </header>
 
-<main class="grid_contenedor container-fluid">
-  <div class="caja c1">
-<img class="img_div" src="./img/wallpaperbetter.com_1925x942.jpg" alt="">
-<h2 class="grid_h2">BLACKPINK</h2>
+<div class="h1_miembros">
+  <p>BLΛƆK PIИK IN YOUR AREA</p>
+</div>
+
+<main class="container">
+
+  <div class="grid1" data-aos="zoom-in">
+
+  <div class="caja c1" data-aos="zoom-in">
+    <img class="img_div" src="./img/wallpaperbetter.com_1925x942.jpg" alt="">
+    <a href="#que_es_bp"><h2 class="grid_h2">BLACKPINK</h2></a>
   </div>
-  <div class="caja c2">
-<img class="img_div" src="./img/BLINK.jpg" alt="">
-<h2 class="grid_h2">BLINK</h2>
+  
+  <div class="caja c2" data-aos="zoom-in">
+    <img class="img_div" src="./img/BLINK.jpg" alt="">
+    <a href="#que_es_blink"><h2 class="grid_h2">BLINK</h2></a>
   </div>
-  <div class="caja c3">
-<img class="img_div" src="./img/YGE.png" alt="">
-<h2 class="grid_h2">YG ENTERTAINMENT</h2>
+
+  <div class="caja c3" data-aos="zoom-in">
+    <img class="img_div" src="./img/YGE.png" alt="">
+    <a href="#que_es_yg"><h2 class="grid_h2">YG ENTERTAINMENT</h2></a>
   </div>
-  <div class="caja c4 bp">
-      <h3 class="grid_p p1">¿Que es BLACK PINK?</h3>
+  
+  </div>
+
+  <div id="que_es_bp" class="caja c4 bp" data-aos="zoom-in">
+      <h3 class="grid_p p1" >¿Que es BLACK PINK?</h3>
       <p class="grid_p">
-        Blackpink es un grupo musical femenino surcoreano formado por YG Entertainment. Está integrado por cuatro miembros: Jisoo, Jennie, Rosé y Lisa.
+        <span>Blackpink</span> es un grupo musical femenino surcoreano formado por <span class="pink">YG Entertainment.</span> Está integrado por cuatro miembros: Jisoo, Jennie, Rosé y Lisa.
       </p>
+
       <div class="grid_icons">
-        <div class="grid3_caja">
-        <img class="icon_index" src="./img/iconjissoindex.jpg" alt="">
-        <h2 class="grid3_h2">JISSO</h2>
+        <div class="grid3_caja" data-aos="zoom-in">
+          <img class="icon_index" src="./img/iconjissoindex.jpg" alt="">
+          <h2 class="grid3_h2">JISSO</h2>
         </div>
-        <div class="grid3_caja">
+        <div class="grid3_caja" data-aos="zoom-in">
         <img class="icon_index" src="./img/iconlisaindex.jpg" alt="">
         <h2 class="grid3_h2">LISA</h2>
       </div>
-        <div class="grid3_caja">
+        <div class="grid3_caja" data-aos="zoom-in">
         <img class="icon_index" src="./img/iconroseindex.jpg" alt="">
-        <h2 class="grid3_h2">ROSÉ</h2>
+        <h2 class="grid3_h2 x">ROSÉ</h2>
       </div>
-        <div class="grid3_caja">
+        <div class="grid3_caja" data-aos="zoom-in">
         <img class="icon_index" src="./img/iconjennieindex.jpg" alt="">
         <h2 class="grid3_h2">JENNIE</h2>
       </div>
+
       </div>
   </div>
-  <div class="caja c5 blink">
+
+  <div  class="caja c5 blink" data-aos="zoom-in">
     <img class="blink_img" src="./img/BLINK5.jpg" alt="">
-    <h3>¿Que significa BLINK?</h3>
-    <p>Por otra parte, los fans de BLACKPINK, conocidos como BLINK, también merecen saber el significado del hermoso nombre que llevan. Esta es una palabra en inglés que se traduce como destello, parpadeo o pestañeo. <br><br>
-      El origen del nombre del fandom, según YG, es la combinación de “BL” y “INK” que provienen de BLACKPINK. De esa manera, los fans también son parte del grupo a estar incluidos en su nombre. Así mismo, BLINK es el destello que las idols verán a medida que ellas recorran este camino de idols.</p>
+    <h3 id="que_es_blink">¿Que significa BLINK?</h3>
+    <p>Por otra parte, los fans de <span class="pink">BLACKPINK</span> , conocidos como BLINK, también merecen saber el significado del hermoso nombre que llevan. Esta es una palabra en inglés que se traduce como destello, parpadeo o pestañeo. <br><br>
+    El origen del nombre del fandom, según YG, es la combinación de “BL” y “INK” que provienen de BLACKPINK. <br><br> De esa manera, los fans también son parte del grupo a estar incluidos en su nombre. Así mismo, BLINK es el destello que las idols verán a medida que ellas recorran este camino de idols.</p>
   </div>
-  <div class="caja c6 yg">
-caja 6
+  <div class="caja c6 yg" data-aos="zoom-in">
+    <h3 id="que_es_yg">¿Que es YG Entertainment?</h3>
+    <p>YG Entertainment es una empresa de entretenimiento surcoreana, fundada en 1996 por Yang Hyun-suk con sede en Seúl. <br><br> La empresa actúa como una discográfica, agencia de talentos, marca de ropa, marca de cosméticos, empresa de gestión de eventos y producción de conciertos.</p>
+    <img src="./img/_yg.webp" alt="">
   </div>
-  <div class="caja c7">
-caja 7
+  <div>
+    <h3 class="caja" data-aos="zoom-in">5 datos de Blackpink (EXTRA)</h3>
+  </div>
+  <div class="caja grid_datos" data-aos="zoom-in">
+    <p>¿Quién es la líder de BLACKPINK? <br><br> La girlband no tiene líder a diferencia del resto de grupos de K-Pop. Muchos de sus seguidores han asumido que la líder es Jisoo, pero lo cierto es que ella lo ha negado y ha explicado que solo es la mayor del grupo.</p>
+    <img src="./img/bpbanner_2.jpg" alt="">
+  </div>
+  <div class="caja grid_datos d2" data-aos="zoom-in">
+    <p>¿Cómo se llaman y cuántos años tienen las integrantes de BLACKPINK? <br> <br>
+      Son cuatro chicas: Jisoo, Jennie, Rosé y Lisa. Sus nombres completos son Kim Ji-Soo, Kim Jennie, Roseanne Park y Lalisa Manoban.
+      
+      En 2021, Jisoo tiene 26 años, Jennie tiene 25 años, Rosé tiene 24 años y Lisa tiene también 24 años.</p>
+    <img src="./img/5datos3.jpg" alt="">
+  </div>
+  <div class="caja grid_datos d3" data-aos="zoom-in">
+    <p>¿Qué significa el concepto BLACKPINK? <br> <br>
+      En el caso de BLACKPINK, se trata de una contradicción de la percepción que se tienen con el color rosa. Según los fans, "el rosa es usado para representar lo lindo, pero BLACKPINK quiere decir que lo lindo no lo es todo".</p>
+    <img src="./img/bannerr45.jpg" alt="">
+  </div>
+  <div class="caja grid_datos d4" data-aos="zoom-in">
+    <p>¿Qué tipo de música hace BLACKPINK? <br> <br>
+      Cuando debutaron en 2016, nos deleitaron con los ritmos más puros del pop surcoreano. Melodías imparables y el protagonismo del electropop, dance-pop, EDM, hip hop y pop eran algunos de sus elementos principales.</p>
+    <img src="./img/5datos4.jpg" alt="">
+  </div>
+  <div class="caja grid_datos d5" data-aos="zoom-in">
+    <p>¿Quién escribe las canciones de BLACKPINK? <br><br> Un sinfín de profesionales de la industria pero en especifico hay un compositor que las ha acompañado en todos y cada uno de sus sencillos: Teddy Park. Se trata de un rapero, compositor y productor surcoreano que trabaja para YG Entertainment.
+
+    </p>
+    <img src="./img/bpbanner_23.jpg" alt="">
   </div>
 </main>
+
+<footer>
+
+  <p>Instagram: <a target="_blank" href="https://www.instagram.com/blackpinkofficial/">@blackpinkofficial
+  </a></p>
+  <p>Twitter: <a target="_blank" href="https://twitter.com/BLACKPINK">BLACKPINKOFFICIAL
+  </a></p>
+  <p>YouTube: <a target="_blank" href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A">BLACKPINK
+  </a></p> 
+
+</footer>
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
