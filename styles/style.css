@@ -114,15 +114,14 @@ footer p {
 .caja.c6.yg p,
 .grid_datos p,
 div h3 {
+    display: grid;
+    place-content: center;
     font-family: 'REM', sans-serif;
     background-color: #33333314;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     font-size: 1.4rem;
     border-radius: .5rem;
-    margin: 0;
     padding: 1rem;
+    margin: 0;
     color: #ffffffb0;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
@@ -376,6 +375,8 @@ main form{
     .caja.c4.bp{
         grid-template-columns: 1fr;
         grid-template-rows: .2fr .7fr 1fr;
+        display: flex;
+        
     }
     .grid_icons {
         grid-row: 3/4;
@@ -441,10 +442,9 @@ main form{
 /*----------------------------contacto---------------------------------- */
 
 .main_contactme{
-    display: flex;
     margin: 0 auto;
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -452,7 +452,8 @@ main form{
 }
 
 .main_contactme img{
-    border-radius: 1000px;
+    border-radius: 62.5rem;
+    grid-column: 2/3;
 }
 
 .main_contactme p
@@ -462,6 +463,9 @@ main form{
 }
 
 .pink{
+    color: rgb(226, 144, 226);
+}
+.pink.h1{
     color: rgb(226, 144, 226);
 }
 
@@ -481,5 +485,112 @@ main form{
     color:black;
 }
 .main{
-    color: azure;
+    color: rgb(255, 255, 255);
+}
+
+.grid_about{
+    border-top: solid rgb(255, 255, 255);
+    gap: 5rem;
+    margin: 0 auto;
+    width: 80vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+
+.grid_about img{
+    grid-column: 1/4;
+    border-radius: 4rem;
+}
+
+.aboutme{
+    grid-column: 4/10;
+    padding: 3rem;
+    color: aliceblue;
+}
+.links_RS {
+    display: flex;
+    justify-content: space-evenly;
+}
+.links_RS a{
+    margin: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+.links_RS i{
+    font-size: 1.6em;
+}
+
+.spanbg{
+    background-color:rgb(35 44 143);
+    color: #fff;
+    padding: 3px;
+}
+.divisor{
+    background-color: rgb(35 44 143);
+    height: 4px;
+    width: 100px;
+    margin-bottom: 1.4rem;
+}
+@media (max-width: 1205px) {
+    .main_contactme{
+    gap: 1rem;
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 6rem;
+    }
+    .main_contactme img{
+    margin: 0 auto;
+    margin-top: 4rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 500px;
+    }
+    .main_contactme .main_contactme_info{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+}
+@media (max-width: 663px){
+    .main_contactme img{
+        width: 100%;
+    }
+    .main_contactme_info h1,
+    .main_contactme_info span.h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .grid_about{
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        gap: 1rem;
+    }
+    .grid_about img{
+        grid-row: 1/2;
+        grid-column: 1/10;
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+    .aboutme{
+        grid-column: 1/10;
+    }
+    .grid_about p {
+        font-size: 1rem;
+    }
+    .main_contactme p{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 767px) {
+    * {
+        font-size: 1rem;
+    }
+    .grid_about{
+        width: 100%;
+    }
 }
