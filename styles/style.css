@@ -9,6 +9,10 @@
     font-weight: 400;
 }
 
+*::selection{
+    background-color: #e96acd;
+    color:#0a090a;
+}
 
 img {
     width: 100%;
