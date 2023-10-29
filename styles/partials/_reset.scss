@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+
+    &::selection {
+     background-color: #e96acd;
+     color:#0a090a;
+    }
+}
+
+.pink{
+    color: $rosita;
+}
+
+.pink_sub{ 
+    text-decoration:underline;
+    color:$rosita;
+}
+
+.blue{ 
+    color:$azulcito;
+}
+
+img {
+    width: 100%;
+}
+.body{
+    background-color: #0a090a;
+}
+
+@include mq991 {
+    p, ul, h2, h3 {                             
+        font-size: 1.3rem;
+    }
+    iframe {
+        width: 65%;
+        height: 200px;
+    }
+}

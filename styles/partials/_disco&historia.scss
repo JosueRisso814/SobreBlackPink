@@ -1,0 +1,59 @@
+main.primer_album{
+    font-size: 1.2rem;
+    text-align:left;
+
+    div{
+
+        .banner_disco{
+            width: 100%;
+            border-radius: 0.8rem;
+        }
+    }
+
+    .hyd_content{
+        max-width: 800px;
+        width: 100%;
+
+        .center_p {
+            text-align:left;
+            margin: 1.1rem;
+            color: aliceblue;
+
+            @include mq767{
+                font-size: 1.2rem;
+            }
+        }
+
+        div{
+
+            .center_p {
+                text-align:left;
+                margin: 1.1rem;
+                color: aliceblue;
+            }
+        }
+
+        article.primer_album{
+
+            .center_p {
+                text-align:left;
+                margin: 1.1rem;
+                color: aliceblue;
+            }
+
+            .center_img {
+                margin: 1.2rem;
+                width: 40%;
+                border-radius: 0.8rem;
+            }
+
+            .iframe {
+                margin: 1.2rem;
+
+                @include mq575 {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}

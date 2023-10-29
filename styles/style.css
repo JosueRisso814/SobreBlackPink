@@ -217,7 +217,7 @@ div h3,
     grid-template-columns: 34% 1fr; 
     grid-template-rows: .2fr 1fr;
     margin: 0;
-    padding-top: 80px;
+    margin-top: 80px;
 }
 .caja.caja.c5.blink h3,
 .caja.caja.c5.blink p{
@@ -399,6 +399,7 @@ main form{
     }
 }
 @media (max-width: 767px) {
+
     .center_p{
         font-size: 1.2rem;
     }
@@ -417,8 +418,11 @@ main form{
 
     .caja.c5.blink{
         grid-template-columns: 1fr;
+        padding-right: 15px;
+        padding-top: 15px;
         background-image: url(../img/BLINK5.jpg);
         background-position: center;
+        max-height: 900px;
     }
     .caja.c5.blink h3{
         grid-column: 1/3;

@@ -1,0 +1,27 @@
+main{
+
+    div{
+        
+        .cartitas{
+            margin-top: 1rem;
+
+            .card-img-top{
+                border-radius: 20px;
+            }
+        }
+    }
+}
+/*---------MIEMBROS / GALLERY--------- */
+
+.gallery{
+    margin: auto;
+    width: 91%;
+    columns: 5 320px;
+    padding: 2em;
+
+    .gallery_img {
+        max-width: 100%;
+        margin-bottom: 0.5em;
+        border-radius: 1rem;
+    }
+}

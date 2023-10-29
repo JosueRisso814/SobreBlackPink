@@ -1,0 +1,349 @@
+.h1_miembros{
+    background-color: rgb(2 1 2);
+    text-align: center;
+    width: 100%;
+    padding-top: .1rem;
+
+    p{
+        color: $rosita;
+        font-size: 1.2rem;
+    }
+}
+
+main{
+    
+    .grid1{
+        max-width: 1200px;
+        margin-top: 4rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+    
+        .caja{
+        text-align: center;
+        border-radius: .5rem;
+        position: relative;
+    
+            .img_div{
+                height: 100%;
+                object-fit: cover;
+                border-radius: .5rem;
+            }
+    
+            .grid_h2{
+                text-decoration:overline;
+                position: absolute;
+                color: #ffffffb0;
+                bottom: 0;
+                background: linear-gradient(rgb(255,255,255,0),rgb(0, 0, 0));
+                margin: 0;
+                padding: .1rem;
+                width: 100%;
+                font-size: 1.6rem;
+                border-radius: .4rem;
+            }
+    
+        }
+
+        .c1{
+            background-color: rgb(39, 35, 44);
+            grid-column: 1/4;
+            grid-row: 1/3;
+            @extend %recuadros_shadow;
+            @include mq991 {
+                grid-column: 1/6;
+            }
+        }
+
+        .c2, .c3{
+        grid-column: 4/6;
+        background-color: rgb(39, 35, 44);
+        height: 200px;
+        @extend %recuadros_shadow;
+        @include mq991 {
+            grid-column: 1/6;
+            }
+        }
+    }
+
+    .c4{
+    text-align: center;
+    color: #ffffffb0;
+    display: grid;
+    grid-template-columns: .4fr 1fr .2fr;
+    grid-template-rows: .3fr 1fr;
+    gap: 1rem;
+
+    @include mq991{
+        grid-template-columns: 1fr;
+    }
+
+        .grid_p{
+            grid-column: 1/3;
+            grid-row: 2/3;
+            @extend %recuadros;
+            @extend %recuadros_shadow;
+
+            @include mq991 {
+                grid-column: 1/3;
+            }
+        }
+        .grid_p.p1{
+            grid-column: 1/3;
+            grid-row: 1/2;
+
+            
+            @include mq991 {
+                grid-column: 1/3;
+            }
+        }
+
+        .grid_icons{
+            grid-row: 1/3;
+            grid-column: 3/4;
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            @include mq991 {
+                justify-content: space-between;
+                grid-column: 1/3;
+                grid-row: 3/4;
+            }
+
+            @include mq767 {
+                grid-row: 3/4;
+                grid-column: 1/3;
+            }
+
+            img{
+                @include mq767 {
+                    width: 100%;
+                    object-fit: cover;
+                    max-width: 100%;
+                }
+            }
+
+            .grid3_caja{
+                position: relative;
+
+                .icon_index{
+                    border-radius: .4rem;
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    transition: all .5s;
+
+                    &:hover{
+                        transform: scale(1.1) translateY(-20px);
+                    }
+                }
+
+                .grid3_h2{
+                    position: absolute;
+                    color: #ffffffb0;
+                    margin: 0;
+                    width: 100%;
+                    font-size: 1rem;
+                    border-radius: .4rem;
+                }
+            }
+        }
+    }
+
+    .caja.c4.bp{
+        padding-top: 80px;
+
+        p{
+            @include mq767 {
+            grid-column: 1/3;
+            }
+        }
+    }
+
+    .caja.c5.blink{
+        text-align: center;
+        color: #ffffffb0;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 34% 1fr; 
+        grid-template-rows: .2fr 1fr;
+        margin: 0;
+        margin-top: 80px;
+
+        @include mq767{
+            padding-right: 1rem;
+            padding-top: 1rem;
+            grid-template-columns: 1fr;
+            background-image: url(../img/BLINK5.jpg);
+            background-position: center;
+            max-height: 1017px;
+        }
+
+        h3{
+            grid-column: 2/3;
+            @extend %recuadros;
+            @extend %recuadros_shadow;
+
+            @include mq767{
+                grid-row: 1/2;
+            }
+        }
+        p{
+            grid-column: 2/3;
+            @extend %recuadros;
+            @extend %recuadros_shadow;
+
+            @include mq767{
+                backdrop-filter: blur(5px);
+            }
+        }
+
+        .blink_img {
+            border-radius: .5rem;
+            grid-row: 1/3;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        img{
+            @extend %recuadros_shadow;
+
+            @include mq991{
+                object-position:-4rem;
+            }
+
+            @include mq767{
+                display: none;
+            }
+        }
+    }
+
+    .caja.c6.yg {
+        text-align: center;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: .4fr 1fr 1fr;
+        grid-template-rows: .2fr .2fr 1fr;
+        margin-bottom: 4rem;
+        padding-top: 80px;
+
+        h3{
+            grid-column: 1/4;
+            grid-row: 1/2;
+
+            @include mq767{
+                grid-column: 1/4;
+                grid-row: 2/3;
+            }
+        }
+
+        p{
+            grid-column: 1/3;
+            grid-row: 2/4;
+            @extend %recuadros;
+            @extend %recuadros_shadow;
+
+            @include mq767{
+                grid-column: 1/4;
+                grid-row: 3/4;
+            }
+        }
+
+        img{
+            margin: auto;
+            grid-column: 3/4;
+            grid-row: 2/4;
+            border-radius: .5rem;
+
+            @include mq767{
+                grid-column: 1/4;
+                grid-row: 1/2;
+            }
+        }
+    }
+
+    div{
+
+        h3{
+            text-align: center;
+            @extend %recuadros;
+            @extend %recuadros_shadow;
+        }
+    }
+
+    .grid_datos{
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row: 1fr 1fr 1fr;
+        text-align: center;
+
+        img{
+            @extend %datos1;
+
+            @include mq767{
+                grid-column: 1/5;
+                grid-row: 1/2;
+            }
+        }
+
+        p{
+            @extend %datos2;
+            @extend %recuadros;
+            @extend %recuadros_shadow;
+
+            @include mq767{
+                grid-column: 1/5;
+                grid-row: 2/3;
+                margin-top: .6rem;
+            }
+        }
+    }
+
+    .grid_datos.d2{
+
+        p{
+            @extend %datos1;
+
+            @include mq767{
+                grid-column: 1/5;
+                grid-row: 2/3;
+                margin-top: .6rem;
+            }
+        }
+
+        img{
+            @extend %datos2;
+
+            @include mq767{
+                grid-column: 1/5;
+                grid-row: 1/2;
+            }
+        }
+    }
+
+    .grid_datos.d4{
+
+        p{
+            @extend %datos1;
+
+            @include mq767{
+                grid-column: 1/5;
+                grid-row: 2/3;
+                margin-top: .6rem;
+            }
+        }
+
+        img{
+            @extend %datos2;
+
+            @include mq767{
+                grid-column: 1/5;
+                grid-row: 1/2;
+            }
+        }
+    }
+}
